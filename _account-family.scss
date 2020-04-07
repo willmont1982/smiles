@@ -1,0 +1,574 @@
+.account-family {
+	.identity{
+		background: url(../images/account/ic-account-family.png) no-repeat left;
+		height: 87px;
+		margin: 20px 0;
+		display: block;
+	}
+	.edit{
+		word-wrap:break-word;
+		font: 20px/25px 'nunito', Arial, sans-serif;
+		margin: 45px 0 30px;
+		color: getColor($themeColor, dark);
+		cursor: pointer;
+		&:hover{
+			color: getColor($brandColor, primary);
+		}
+	}
+	.extract{
+		color: getColor($themeColor, dark);
+		padding: 20px 0;
+		display: block;
+		border: 0;
+		font-weight: bold;
+		cursor: pointer;
+		i{
+			font-size: 20px;
+		}
+		&:hover{
+			color: getColor($brandColor, primary);
+		}
+	}
+	.trash{
+		color: getColor($themeColor, dark);
+		padding: 20px 0;
+		display: block;
+		border: 0;
+		font-weight: bold;
+		cursor: pointer;
+		i{
+			font-size: 20px;
+		}
+		&:hover{
+			color: getColor($brandColor, primary);
+		}
+	}
+	.panel{
+		padding: 0;
+		box-shadow: none;
+	}
+	table {
+		border: 1px solid getColor($themeColor, light);
+		width: 100%;
+		display: inline-table;
+		border-collapse: collapse;
+		margin-bottom: 20px;
+			tr{
+				border-bottom: 1px solid getColor($themeColor, light);
+
+				&.blocked{
+					td{
+						color:getColor($themeColor, light);
+
+						.btn-link{
+							text-decoration: none;
+							color:getColor($themeColor, light);
+
+						}
+					}
+				}
+			}
+			td{
+				.btn-link{
+					color: getColor($themeColor, dark);
+				}
+				i[class^="icon-"]{
+					font-size: 20px;
+					display: inline-flex;
+					vertical-align: bottom;
+					padding-right: 5px;
+				}
+				&:nth-of-type(2){
+					text-align: left;
+					padding: 0px 10px;
+				}
+				&:nth-of-type(3){
+					padding: 10px 20px;
+				}
+				&:nth-of-type(4){
+					text-align: left;
+
+					.btn-link:hover{
+						text-decoration: none
+					}
+				}
+				&:first-of-type{
+					padding: 30px 20px;
+					vertical-align: middle;
+					font-weight: bold;
+					color: getColor($themeColor, dark);
+					width: 190px;
+					&.invite{
+						color: getColor($brandColor, primary);
+						cursor: pointer;
+					}
+				}
+			}
+		}
+			
+	&__create, &__change-member{
+		.content{
+			border: 1px solid getColor($themeColor, light);
+			width: 450px;
+			max-width: 100%;
+			margin: 0 auto;
+			padding: 30px 20px;
+			box-sizing: border-box;
+			display: flow-root;
+		}
+		form{
+			display: none;
+		}
+		.container{
+			@media only screen and (min-width: 764px) {
+				padding: 0 15px;
+				margin: 20px 0;
+				width: 100%;
+				box-sizing: border-box;
+			}
+
+			.row-spacing{
+				margin-left: 0
+			}
+			.smiles-logos{
+				font-size: 3px;
+			}
+		}
+	}
+	&__modal{
+		padding: 40px 40px 0;
+    	box-sizing: border-box;
+		h3{
+			font-family: 'NunitoRegular', Arial, Helvetica, sans-serif;
+			color: getColor($brandColor, primary);
+			font-weight: normal;
+			text-align: center;
+		}
+		button{
+			margin: 20px 0 0;
+		}
+	}
+	&__registration{
+		.info{
+			margin: 20px 0;
+			text-align: center
+		}
+		h3{
+			margin: 0;
+		}
+	}
+	&__keyboard{
+		width: 350px;
+		margin: 0 auto;
+		.number-keyboard{
+			margin-top:20px;
+		}
+		.smiles-logos{
+			font-size: 3px;
+		}
+		.group{
+			margin-top: 20px
+		}
+	}
+	&__join-club{
+		border: 1px solid getColor($themeColor, light);
+		padding: 60px;
+		.sponsored{
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 40px;
+			.smiles-logos {
+				font-size: 5px;
+			}
+		}
+		.packages{
+			display: inline-block;
+			vertical-align: middle;
+			.title{
+				font: bold 12px Arial, sans-serif;
+				color: getColor($themeColor, dark);
+				display: inline-block;
+				vertical-align: bottom;
+				text-align: left;
+				span{
+					display: block;
+					color: getColor($productsColor, club);
+					font-size: 28px;
+				}
+			}
+			.per-month{
+				display: inline-block;
+				vertical-align: bottom;
+				font: bold 12px Arial, sans-serif;
+				color: getColor($productsColor, club);
+				width: 55px;
+			}	
+			.fee{
+				font: bold 15px Arial, sans-serif;
+				color: getColor($themeColor, dark);
+				padding: 15px 0;
+			}
+			.your-plan{
+				color: getColor($productsColor, club);
+				font: bold 15px Arial, sans-serif;
+			}
+		}
+	}
+	&__choosen-plan{
+		border: 1px solid getColor($themeColor, light);
+		margin-top: 40px;
+		float: left;
+		width: 100%;
+		box-sizing: border-box;
+
+		header{
+			border-bottom: 1px solid getColor($themeColor, light);
+			padding: 20px 0 10px;
+			text-align: center;
+		}
+		.description-plan{
+			h4{
+				margin: 0;
+			}
+			.resume{
+				padding: 30px;
+			}
+			table{
+					border: 0;
+					margin-top: 30px;
+		
+					td{
+						padding: 5px;
+					}
+				}
+			.profile{
+				padding: 30px;
+				border-left:1px solid getColor($themeColor, light);
+				table{
+					tr{
+						border:0;
+			
+						td{
+							padding: 10px 0;
+						}
+					}
+				}
+			}
+		}
+	}	
+	&__warning{
+		background-color: getColor($themeColor, primary);
+		border: 2px solid getColor($brandColor, primary);
+		border-radius: 4px;
+		padding: 20px;
+		display: flex;
+		text-align: right;
+		i{
+			background: url(../images/account/ic-af-my-account.png) no-repeat left;
+			height: 35px;
+			margin: 0;
+			display: block;
+			width: 51px;
+		}
+		p{
+			margin: 0;
+		}
+		strong{
+			color:getColor($brandColor, primary);
+		}
+		b{
+			color:getColor($brandColor, primary);
+		}
+	}
+}
+
+.invate-modal {
+	width: 300px;
+	max-width: 90%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	
+	.input__animate  {
+		margin-bottom: 12px;
+		
+		.check-icon {
+			background: url(#{$image-folder-path}/account/ic-check-small.png) no-repeat left;
+			position: absolute;
+			top: 16px;
+			right: -25px;
+		}
+	}
+}   
+@media (max-width: 640px) {
+	.aui .account-family {		
+		&.row{
+			margin-left: 0;
+		}
+	
+		.panel{
+			[class*="span4"] {
+				width: 100%
+			}
+		}
+		.trash{
+			text-align: center;
+			background: getColor($brandColor, primary);
+			margin: 10px 60px 30px;
+			padding: 10px;
+			color: getColor($themeColor, primary);
+		}
+		.extract{
+			text-align: center;
+		}
+		&__create{
+			.content{
+				width: 100%;
+				padding: 20px;
+			}
+			.container {
+				padding: 0;
+				margin: 0;
+			}
+		}
+		[class*="span"] {
+			float: left;
+		}
+		[class*="span3"] {
+			width: 22.85714%;
+		}
+		[class*="span4"] {
+			width: 31.42857%;
+		}
+		[class*="span6"] {
+			width: 48.57143%;
+		}
+		[class*="span9"] {
+			width: 74.28571%;
+		}
+		.btn-outline{
+			width: 95%;
+		}
+		&__modal{
+			padding:0;
+			button{
+				margin-top: 20px;
+			}
+			[class*="span4"] {
+				width: 100%;
+			}
+		}
+		&__join-club{
+			padding: 10px;
+			.sponsored {
+				display: block;
+				margin-right: 0;
+				text-align: center;
+				border-bottom: 1px solid getColor($themeColor, light);
+			}
+			.packages{
+				padding-top:10px;	
+				text-align: center;
+   				display: block;
+			}
+		}	
+		&__choosen-plan{
+			padding:0;
+			.description-plan {
+				padding: 10px 0 0;
+				.resume {
+					padding: 10px 5px;
+				}
+				.profile {
+					padding: 10px 5px;
+					text-align: left;
+				}
+			}
+		}
+		&__keyboard{
+			width: 100%;
+		}
+		&__warning{
+			display: inline-block;
+			text-align: center;
+			.btn-outline{
+				width: 100%;
+			}
+			small{
+				margin: 0 0 10px;
+				display: block;
+			}
+			.logo{
+				justify-content: center;
+				margin-bottom: 20px;
+			}
+			[class*="span8"] {
+				width: 100%;
+			}
+			[class*="span2"] {
+				width: 40.17094%;
+			}
+		}
+	}
+}	
+
+
+/* migrate R5
+   ================================ */
+   .sectionFull .account-family.row {
+		margin-left:0;
+		.buying-status img {
+			width: 40px;
+		}
+		.smls-color-orange {
+			white-space: nowrap;
+			color: #FF5A00;
+		}
+		.smls-txt-left {
+			text-align: left;
+		}
+		table {
+			td{
+				&:first-of-type{
+				text-align: left;
+			}
+				&:nth-of-type(2){
+					text-align: right;
+					padding-right: 50px;
+				}
+			}
+		}
+   }	
+   .account-family {
+		img#smls-img-card {
+			max-height: 28px;
+			margin-top: -38px !important;
+			position: relative;
+			float: right;
+			right: 10px;
+		}
+	   h2{
+		font-size: 19px;
+	   }
+	   .smls-btn-block {
+		display: block;
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	  }
+	  
+	  .smls-btn {
+		display: inline-block;
+		width: 100%;
+		padding: 15px 10px;
+		border-radius: 4px;
+		color: #ffffff;
+		font: bold 14px Arial,Helvetica,Sans-serif;
+		line-height: 1.42857143;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		background-image: none;
+		background: transparent;
+		border: 1px solid transparent;
+	  }
+	  
+	  .smls-button-orange {
+		color: #fff !important;
+		background-color: getColor($brandColor, primary) !important;
+	  }
+	  .smls-btn-color-silver {
+		background: #555555;
+	}
+	  
+	  .smls-float-right {
+		float: right;
+	  }
+	.row.margin {
+	  margin-left: -534px;
+	}
+	.teclado {
+	  .smls-column-2 {
+		right: 50px;
+		position: relative;
+	  }
+	  .logo {
+		width: 85px;
+		max-width: inherit;
+	  }
+	}
+   .number-keyboard-center {
+	width: 310px;
+	margin: 0 auto;
+	display: block;
+	height: 420px;
+	img {
+	  width: 60%;
+	}
+  }
+  
+  .number-keyboard .layout {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: box;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	-o-box-orient: horizontal;
+	-webkit-box-lines: multiple;
+	-moz-box-lines: multiple;
+	-o-box-lines: multiple;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	border: 2px solid getColor($brandColor, primary);
+	padding: 0 20px 20px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	> * {
+	  border-top: none;
+	  border-left: none;
+	  width: 18%;
+	  box-sizing: border-box;
+	  text-align: center;
+	  padding: 0.3cm 0;
+	  cursor: pointer;
+	  -webkit-transition: all 0.5s;
+	  transition: all 0.5s;
+	  background: #555555;
+	  margin: 2px;
+	  color: #ffffff;
+	  font-weight: bold;
+	  border-radius: 4px;
+	}
+	span {
+	  float: left;
+	  display: block;
+	  width: 100%;
+	  background: transparent;
+	  color: #7c7c7c;
+	  text-align: left;
+	  cursor: default;
+	  &.active {
+		background: transparent;
+		color: #7c7c7c;
+	  }
+	}
+	.active {
+	  background: #777;
+	  color: #fff;
+	}
+  }
+}
+	
